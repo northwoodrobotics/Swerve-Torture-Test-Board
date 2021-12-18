@@ -61,21 +61,14 @@ public final class Constants {
       new Translation2d(-Constants.DriveSubsystem.kWheelBase / 2, -Constants.DriveSubsystem.kTrackWidth / 2));
 
 
-    public static final class TestSwerveIDs{ 
+            public static final class TestSwerveIDs{ 
 
         public static int testSwerveAzimuth = 1; 
         public static int testSwerveDrive = 2; 
         public static int testSwerveCanCoder = 3;
-    }
+        }
 
     public static double testModuleOffset = 0;
-      
-
-
-
-
-
-
-    
-}
+    }
+    public static int testControllerID =0;
 }

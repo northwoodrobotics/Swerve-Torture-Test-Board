@@ -25,11 +25,22 @@ public class SwerveTortureModule extends CommandBase{
         this.noslow = false; 
         this.noPushOff = false;
     }
-
+    
     public void execute (){
         singleModule.drive(xCommand, yCommand, rCommand, nogyro, noslow, noPushOff);
 
     }
+    
+
+    @Override
+    public void end(boolean interrupted){
+        singleModule.drive(0,0,0,false,false,false);
+    }
+    @Override
+    public boolean isFinished() {
+        return true;
+    }
+
 
     
 

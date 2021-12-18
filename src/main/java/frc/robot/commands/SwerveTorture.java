@@ -16,13 +16,18 @@ public class SwerveTorture extends SequentialCommandGroup{
     public SwerveTorture(){
         new SequentialCommandGroup(
             new SwerveTortureModule(1, 0, 0),
-            new WaitCommand(1),
+            new WaitCommand(20),
             new SwerveTortureModule(1, .5, 0),
-            new WaitCommand(1),
-            new SwerveTortureModule(-1, -.5, 1)
+            new WaitCommand(20),
+            new SwerveTortureModule(-1, -.5, 1),
+            new WaitCommand(20),
+            new SwerveTortureModule(0, 0, 0)
+
         );
         
         
+
+
     }
 
 
